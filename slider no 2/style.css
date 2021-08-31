@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#sliders {
+  height: 100vh;
+  background-image: url(./img/background.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.right-part {
+  width: 70%;
+  height: 100%;
+  margin-left: 30px;
+  position: relative;
+
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: white;
+  margin: 30px 0px 30px 30px;
+}
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.slide {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.cards {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  padding: 30px;
+  background: white;
+  position: relative;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  width: 250px;
+  height: 250px;
+}
+
+.card:nth-child(odd) {
+  margin-bottom: 60px;
+}
+
+.card .time {
+  position: absolute;
+  background: #2e5577;
+  color: white;
+  top: -20px;
+  padding: 10px 15px;
+  border-radius: 0px 15px 0px 15px;
+}
+
+.card h2 {
+  font: 1.5rem;
+}
+
+.card p {
+  font-size: 18px;
+}
+
+.navigations {
+  position: absolute;
+  top: 50px;
+  right: 10%;
+  display: flex;
+  z-index: 10;
+}
+.navigations button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* //////////////////////////////////////// */
+
+.left-part {
+  width: 30%;
+  height: 100%;
+  background: #2e5577;
+  position: relative;
+  padding: 30px;
+}
+
+.logo-div {
+  top: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  background: white;
+  border-radius: 50%;
+}
+
+.mass-schedule {
+  display: flex;
+  flex-flow: column;
+  margin-top: 80px;
+  justify-content: center;
+  color: white;
+}
+
+.mass-schedule h1 {
+  text-align: left;
+  font-size: 3vw;
+  color: goldenrod;
+  line-height: 36px;
+}
+
+.days {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.days h2 {
+  font-size: 1.75rem;
+  color: goldenrod;
+  text-decoration: underline;
+}
+
+.events {
+  display: flex;
+  margin-top: 10px;
+}
+
+.time {
+  margin-right: 30px;
+}
+
+.time p,
+.event p {
+  font-size: 20px;
+}
+
+.Reconciliation {
+  margin-top: 30px;
+  color: white;
+}
+
+.Reconciliation h1 {
+  font-size: 3vw;
+  color: goldenrod;
+}
+
+.Reconciliation p {
+  font-size: 20px;
+}
+
+.Reconciliation p:first-child {
+  margin-right: 30px;
+}
+
+@media (max-width: 1000px) {
+  #sliders {
+    height: auto;
+    padding: 0px;
+    flex-direction: column;
+  }
+  .left-part {
+    width: 100%;
+  }
+  .right-part {
+    width: 100%;
+  }
+}
+
+.dots {
+  display: flex;
+}
+.dot {
+  background-color: white !important;
+  width: 20px;
+  height: 20px;
+  text-indent: -9999em;
+  overflow: hidden;
+  border: none;
+  border-radius: 100%;
+  transition: all 0.3s linear;
+  margin: 0 8px;
+  cursor: pointer;
+}
+.dot:focus,
+.dot:active,
+.dot:hover {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.4) !important;
+}
+.dot.active {
+  background-color: rgba(255, 255, 255, 0.4);
+}

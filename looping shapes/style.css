@@ -1,0 +1,51 @@
+body{
+    /* background-color: rgb(11, 78, 78); */
+    margin: 0;
+    padding: 0;
+}
+
+
+.svg-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: rgb(0, 134, 212);
+}
+
+.svgs{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    position: relative;
+}
+
+svg{
+    position: absolute;
+}
+
+
+
+
+
+.t1{
+
+    fill: #ff4545;
+    ;
+}
+
+.t2{
+    fill: #ff4545;
+}
+
+.t3{
+
+    fill: #ff4545;
+}
+
+#moving-path3{
+    top: 0;
+}

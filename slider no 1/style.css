@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide-container{
+    width: 1230px;
+    height: 700px;
+    position: relative;
+}
+
+.slide{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.slide01{
+    background-image:  url(./img/image-huyy@2x.jpg);
+} 
+.slide02{
+    background-image:  url(./img/image-jesse@2x.jpg);
+} 
+.slide03{
+    background-image:  url(./img/image-stepheny@2x.jpg);
+} 
+.slide04{
+    background-image:  url(./img/jule-brandit-image@2x.jpg);
+} 
+.slide05{
+    background-image:  url(./img/michael-woodmas-image@2x.jpg);
+} 
+
+.nav-circles{
+    position: absolute;
+    right: 0px;
+    bottom: 175px;
+    cursor: pointer;
+}
+
+.nav-circles button{
+    width: 10px;
+    height: 10px;
+    background: gray;
+    border: none;
+    border-radius: 50%;
+    margin-right: 10px; 
+    cursor: pointer;
+}
+
+.nav-circles button.active{
+    width: 12px;
+    height: 12px;
+    background: none;
+    border: 1px solid black;
+}
+
+
+
+.fading-heading{
+    position: absolute;
+    bottom: 75px;
+    left: 20%;
+    width: 500px;
+}
+
+.fading-heading h1{
+    font-size: 3rem;
+    position: absolute;
+    background: white;
+}

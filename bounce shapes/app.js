@@ -1,0 +1,22 @@
+// SELECTORS
+const img = document.querySelector(".big-circle")
+const t1 = document.querySelector(".t-1")
+const sq1 = document.querySelector(".sq-1")
+const sc = document.querySelector(".small-circle")
+const cy1 = document.querySelector(".cy-1")
+const t3 = document.querySelector(".t-3")
+const sq2 = document.querySelector(".sq-2")
+const cy2 = document.querySelector(".cy-2")
+const t2 = document.querySelector(".t-2")
+
+// LET'S TWEEN
+const tween = gsap.timeline()
+tween.to(img, 4,{ y: window.innerHeight  - img.clientHeight, ease:"bounce.out"})
+.to(t1, 1.2, {rotate: 270, y: window.innerHeight  - t1.clientHeight, ease:"bounce.out"}, "-=3.2")
+.to(sq1, 1.4, {rotate: -150, y: window.innerHeight - sq1.offsetTop - sq1.clientHeight, ease:"bounce.out"}, "-=2")
+.to(sc, 3, { y: window.innerHeight - sc.clientHeight, ease:"bounce.out"}, "-=1.8")
+.to(cy1, 2.7, { y: window.innerHeight - cy1.offsetTop - cy1.clientHeight, ease:"bounce.out"}, "-=1.2")
+.to(t3, 1.3, {rotate: -180, y: window.innerHeight - t3.offsetTop - t3.clientHeight, ease:"bounce.out"}, "-=2")
+.to(sq2, 1.5, { y: window.innerHeight - sq2.offsetTop - sq2.clientHeight, ease:"bounce.out"}, "-=1")
+.to(cy2, 2.8, {rotate: 200, y: window.innerHeight - cy2.offsetTop - cy2.clientHeight, ease:"bounce.out"}, "-=1.5")
+.to(t2, 1.3, {rotate: -100, y: window.innerHeight - t2.offsetTop - t2.clientHeight, ease:"bounce.out"}, "-=2.6")

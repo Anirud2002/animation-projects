@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#one{
+    height: 100vh;
+    background-color: bisque;
+    position: relative;
+}
+
+#one h1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+ 
+#two{
+    height: 100vh;
+    background-color: darkslategray;
+    color: white;
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px;
+    overflow: hidden;
+}
+
+#two h1{
+    font-size: 9rem;
+    position: absolute;
+}
+
+.text-2{
+    top: 20%;
+}
+

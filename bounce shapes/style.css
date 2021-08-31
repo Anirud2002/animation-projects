@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+}
+
+#bouncing-container {
+  height: 100vh;
+  width: 100%;
+  background-color: darkslategrey;
+  position: relative;
+}
+
+img {
+  position: absolute;
+}
+
+.big-circle {
+  left: 40%;
+}
+.small-circle {
+  left: 50%;
+  width: 30px;
+  height: 30px;
+}
+.t-1 {
+  left: 42%;
+  width: 59px;
+  height: 49px;
+}
+.t-2 {
+  left: 48%;
+  width: 28px;
+  height: 21px;
+}
+.t-3 {
+  left: 53%;
+  width: 32px;
+  height: 29px;
+}
+.sq-1 {
+  left: 41%;
+  width: 20px;
+  height: 20px;
+}
+.sq-2 {
+  left: 45%;
+  width: 20px;
+  height: 20px;
+}
+.cy-1 {
+  left: 44%;
+  width: 21px;
+  height: 35px;
+}
+.cy-2 {
+  left: 47%;
+  width: 27px;
+  height: 40px;
+}
